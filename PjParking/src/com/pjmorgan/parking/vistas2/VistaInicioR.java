@@ -24,15 +24,15 @@ public class VistaInicioR extends JFrame {
 		
 		JLabel lblBienvenidoAPjmorgan = new JLabel("Bienvenido a PJMorgan");
 		
-		JButton btnEntradaDeVehculo = new JButton("Entrada de vehículo");
+		JButton btnEntradaDeVehculo = new JButton("Entrada de vehiculo");
 		
-		JButton btnSalidaDeVehculo = new JButton("Salida de vehículo");
+		JButton btnSalidaDeVehculo = new JButton("Salida de vehiculo");
 		
-		JButton btnVehculosActuales = new JButton("Vehículos actuales");
+		JButton btnVehculosActuales = new JButton("Vehiculos actuales");
 		
 		JButton btnSalidas = new JButton("Salidas");
 		
-		JButton btnFacturacin = new JButton("Facturación");
+		JButton btnFacturacin = new JButton("Facturacion");
 		
 		JButton btnSalir = new JButton("Salir");
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
