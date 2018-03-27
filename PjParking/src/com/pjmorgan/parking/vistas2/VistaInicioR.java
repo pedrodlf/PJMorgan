@@ -9,10 +9,13 @@ import javax.swing.GroupLayout.Alignment;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.border.EmptyBorder;
 
+import com.pjmorgan.parking.controller.AppController;
+import com.pjmorgan.parking.controller.impl.AppControllerImpl;
+
 public class VistaInicioR extends JFrame {
 
 	private JPanel contentPane;
-	
+
 	public VistaInicioR() {
 		setResizable(false);
 		setTitle("Inicio");
@@ -33,6 +36,8 @@ public class VistaInicioR extends JFrame {
 		JButton btnSalidas = new JButton("Salidas");
 		
 		JButton btnFacturacin = new JButton("Facturacion");
+		
+		
 		
 		JButton btnSalir = new JButton("Salir");
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
@@ -82,7 +87,8 @@ public class VistaInicioR extends JFrame {
 		);
 		contentPane.setLayout(gl_contentPane);
 	}
-
+		
+	
 }
 
 	
