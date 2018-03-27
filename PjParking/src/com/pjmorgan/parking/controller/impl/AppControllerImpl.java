@@ -6,7 +6,7 @@ public class AppControllerImpl implements AppController {
 
 	@Override
 	public void inicio() {
-		// TODO Auto-generated method stub
+		
 
 	}
 

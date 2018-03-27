@@ -1,9 +1,13 @@
 package com.pjmorgan.parking;
 
+import com.pjmorgan.parking.controller.AppController;
+import com.pjmorgan.parking.controller.impl.AppControllerImpl;
+
 public class AppParking {
 
 	public static void main(String[] args) {
-		System.out.println("ho ho ho");
+	AppController controller = new AppControllerImpl();
+	controller.inicio();
 		
 
 	}
