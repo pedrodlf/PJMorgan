@@ -1,5 +1,8 @@
 package com.pjmorgan.parking.vistas2;
 
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
 import javax.swing.GroupLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -25,16 +28,46 @@ public class VistaInicioR extends JFrame {
 		JLabel lblBienvenidoAPjmorgan = new JLabel("Bienvenido a PJMorgan");
 		
 		JButton btnEntradaDeVehculo = new JButton("Entrada de vehículo");
+		btnEntradaDeVehculo.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+			}
+		});
 		
 		JButton btnSalidaDeVehculo = new JButton("Salida de vehículo");
+		btnSalidaDeVehculo.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+			}
+		});
 		
 		JButton btnVehculosActuales = new JButton("Vehículos actuales");
+		btnVehculosActuales.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+			}
+		});
 		
 		JButton btnSalidas = new JButton("Salidas");
+		btnSalidas.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+			}
+		});
 		
 		JButton btnFacturacin = new JButton("Facturación");
+		btnFacturacin.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+			}
+		});
 		
 		JButton btnSalir = new JButton("Salir");
+		btnSalir.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {		
+			}
+		});
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
 			gl_contentPane.createParallelGroup(Alignment.LEADING)
@@ -86,4 +119,5 @@ public class VistaInicioR extends JFrame {
 }
 
 	
+
 
