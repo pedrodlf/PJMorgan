@@ -1,12 +1,15 @@
 package com.pjmorgan.parking.controller.impl;
 
 import com.pjmorgan.parking.controller.AppController;
+import com.pjmorgan.parking.vistas2.VistaInicioR;
 
 public class AppControllerImpl implements AppController {
 
+	VistaInicioR vInicio = new VistaInicioR();
+	
 	@Override
 	public void inicio() {
-		// TODO Auto-generated method stub
+		vInicio.setVisible(true);
 
 	}
 
