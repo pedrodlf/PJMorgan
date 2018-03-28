@@ -9,5 +9,6 @@ public interface AppController {
 	public void entradaFail();
 	public void salidaOk();
 	public void salidaFail();
-	
+	public void recuperarVehiculosApacados();
+	public void recuperarVehiculosFacturados();
 }

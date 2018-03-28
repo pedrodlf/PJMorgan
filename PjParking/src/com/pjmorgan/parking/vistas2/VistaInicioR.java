@@ -16,7 +16,11 @@ import com.pjmorgan.parking.controller.AppController;
 import com.pjmorgan.parking.controller.impl.AppControllerImpl;
 
 public class VistaInicioR extends JFrame {
-
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	AppController controller = new AppControllerImpl();
 	private JPanel contentPane;
 
 	public VistaInicioR() {
@@ -32,8 +36,13 @@ public class VistaInicioR extends JFrame {
 		
 		JButton btnEntradaDeVehculo = new JButton("Entrada de vehículo");
 		btnEntradaDeVehculo.addMouseListener(new MouseAdapter() {
+		
 			@Override
 			public void mouseClicked(MouseEvent e) {
+			
+				controller.nuevaEntrada();
+				
+				
 			}
 		});
 		
@@ -41,6 +50,7 @@ public class VistaInicioR extends JFrame {
 		btnSalidaDeVehculo.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
+				controller.nuevaSalida();
 			}
 		});
 		
@@ -48,6 +58,7 @@ public class VistaInicioR extends JFrame {
 		btnVehculosActuales.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
+			controller.recuperarVehiculosApacados();
 			}
 		});
 		
@@ -55,6 +66,7 @@ public class VistaInicioR extends JFrame {
 		btnSalidas.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
+				controller.recuperarVehiculosFacturados();
 			}
 		});
 		
