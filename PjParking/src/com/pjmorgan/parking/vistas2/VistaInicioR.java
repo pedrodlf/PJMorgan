@@ -39,7 +39,7 @@ public class VistaInicioR extends JFrame {
 		
 			@Override
 			public void mouseClicked(MouseEvent e) {
-			
+			setVisible(false);
 				controller.nuevaEntrada();
 				
 				
