@@ -50,6 +50,7 @@ public class VistaInicioR extends JFrame {
 		btnSalidaVehiculo.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
+				setVisible(false);
 				controller.nuevaSalida();
 			}
 		});
