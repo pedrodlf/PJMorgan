@@ -126,3 +126,5 @@ public class VistaEntrada extends JFrame{
 		contentPane.setLayout(gl_contentPane);
 	}
 }
+
+

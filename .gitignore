@@ -1,7 +1,7 @@
 /.metadata/
 
-*.lock
-
 \.recommenders/
 
 \.project
+
+PjParking/bin/

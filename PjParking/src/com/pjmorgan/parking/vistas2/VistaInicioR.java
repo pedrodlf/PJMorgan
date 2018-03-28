@@ -40,7 +40,7 @@ public class VistaInicioR extends JFrame {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 			setVisible(false);
-			controller.nuevaEntrada();
+				controller.nuevaEntrada();
 				
 				
 			}
@@ -58,7 +58,7 @@ public class VistaInicioR extends JFrame {
 		btnVehculosActuales.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-			
+			controller.recuperarVehiculosApacados();
 			}
 		});
 		
@@ -66,7 +66,7 @@ public class VistaInicioR extends JFrame {
 		btnSalidas.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				
+				controller.recuperarVehiculosFacturados();
 			}
 		});
 		
@@ -137,3 +137,5 @@ public class VistaInicioR extends JFrame {
 }
 
 	
+
+

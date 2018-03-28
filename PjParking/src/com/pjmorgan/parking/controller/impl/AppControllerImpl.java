@@ -1,23 +1,28 @@
 package com.pjmorgan.parking.controller.impl;
 
 import com.pjmorgan.parking.controller.AppController;
+import com.pjmorgan.parking.model.Entrada;
+import com.pjmorgan.parking.model.Salida;
 import com.pjmorgan.parking.vistas2.VistaEntrada;
 import com.pjmorgan.parking.vistas2.VistaInicioR;
 
 public class AppControllerImpl implements AppController {
 
+	
+
+
 	@Override
 	public void inicio() {
-		VistaInicioR inicioR = new VistaInicioR();
-			inicioR.setVisible(true);
+		VistaInicioR vInicio = new VistaInicioR();
+		vInicio.setVisible(true);
 
 	}
 
 	@Override
 	public void nuevaEntrada() {
-		VistaEntrada entrada = new VistaEntrada();
-		entrada.setVisible(true);
-
+		VistaEntrada vEntrada = new VistaEntrada();
+		vEntrada.setVisible(true);
+		
 	}
 
 	@Override
@@ -27,27 +32,29 @@ public class AppControllerImpl implements AppController {
 	}
 
 	@Override
-	public void entradaOk() {
+	public void recuperarVehiculosApacados() {
 		// TODO Auto-generated method stub
 
 	}
 
 	@Override
-	public void entradaFail() {
+	public void recuperarVehiculosFacturados() {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
-	public void salidaOk() {
-		// TODO Auto-generated method stub
 
+
+	@Override
+	public boolean isEntrada(Entrada entrada) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 	@Override
-	public void salidaFail() {
+	public boolean isSalida(Salida salida) {
 		// TODO Auto-generated method stub
-
+		return false;
 	}
 
 }
