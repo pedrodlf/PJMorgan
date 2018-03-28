@@ -80,7 +80,11 @@ public class VistaEntrada extends JFrame{
 				
 				Entrada entrada = new Entrada(tipo, txtMarca.getText(), textMatricula.getText(), textModelo.getText(), new Date());
 				setVisible(false);
-				controller.isEntrada(entrada);
+				if(controller.isEntrada(entrada))controller.inicio();
+				else{
+					 System.err.println("ERROR: Los datos no se han podido Guardar. CONEXION A LA BBDD FALLIDA ");
+					 controller.fin();
+				}
 				
 			}
 		});
@@ -93,6 +97,16 @@ public class VistaEntrada extends JFrame{
 				controller.inicio();
 			}
 		});
+		
+		
+		
+		
+		
+		/**
+		 * CODIGO AUTOGENERADO
+		 * ----------------------------------------------------------------------------------
+		 * */
+		
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
 			gl_contentPane.createParallelGroup(Alignment.TRAILING)

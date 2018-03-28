@@ -32,9 +32,11 @@ public interface AppController {
 	 * 
 	 * @return true si la salida se ha realizado con exito
 	 */
-	public boolean isSalida(Salida salida);
+	public boolean isSalida(Entrada entrada);
 
 	public void recuperarVehiculosApacados();
 
 	public void recuperarVehiculosFacturados();
+	
+	public void fin();
 }
