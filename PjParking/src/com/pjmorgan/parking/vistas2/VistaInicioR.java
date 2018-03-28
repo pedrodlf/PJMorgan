@@ -34,8 +34,8 @@ public class VistaInicioR extends JFrame {
 		
 		JLabel lblBienvenidoAPjmorgan = new JLabel("Bienvenido a PJMorgan");
 		
-		JButton btnEntradaDeVehculo = new JButton("Entrada de vehículo");
-		btnEntradaDeVehculo.addMouseListener(new MouseAdapter() {
+		JButton btnEntradaVehiculo = new JButton("Entrada de vehículo");
+		btnEntradaVehiculo.addMouseListener(new MouseAdapter() {
 		
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -46,32 +46,32 @@ public class VistaInicioR extends JFrame {
 			}
 		});
 		
-		JButton btnSalidaDeVehculo = new JButton("Salida de vehículo");
-		btnSalidaDeVehculo.addMouseListener(new MouseAdapter() {
+		JButton btnSalidaVehiculo = new JButton("Salida de vehículo");
+		btnSalidaVehiculo.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				controller.nuevaSalida();
 			}
 		});
 		
-		JButton btnVehculosActuales = new JButton("Vehículos actuales");
-		btnVehculosActuales.addMouseListener(new MouseAdapter() {
+		JButton btnVehiculosActuales = new JButton("Vehículos actuales");
+		btnVehiculosActuales.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 			controller.recuperarVehiculosApacados();
 			}
 		});
 		
-		JButton btnSalidas = new JButton("Salidas");
-		btnSalidas.addMouseListener(new MouseAdapter() {
+		JButton btnSalidasTotales = new JButton("Salidas");
+		btnSalidasTotales.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				controller.recuperarVehiculosFacturados();
 			}
 		});
 		
-		JButton btnFacturacin = new JButton("Facturación");
-		btnFacturacin.addMouseListener(new MouseAdapter() {
+		JButton btnFacturacion = new JButton("Facturación");
+		btnFacturacion.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 			}
@@ -92,15 +92,15 @@ public class VistaInicioR extends JFrame {
 					.addGap(53)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 						.addGroup(gl_contentPane.createSequentialGroup()
-							.addComponent(btnEntradaDeVehculo)
+							.addComponent(btnEntradaVehiculo)
 							.addPreferredGap(ComponentPlacement.UNRELATED)
-							.addComponent(btnSalidaDeVehculo, GroupLayout.PREFERRED_SIZE, 167, GroupLayout.PREFERRED_SIZE))
+							.addComponent(btnSalidaVehiculo, GroupLayout.PREFERRED_SIZE, 167, GroupLayout.PREFERRED_SIZE))
 						.addGroup(gl_contentPane.createSequentialGroup()
 							.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING, false)
-								.addComponent(btnFacturacin, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-								.addComponent(btnVehculosActuales, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, 167, Short.MAX_VALUE))
+								.addComponent(btnFacturacion, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+								.addComponent(btnVehiculosActuales, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, 167, Short.MAX_VALUE))
 							.addPreferredGap(ComponentPlacement.UNRELATED)
-							.addComponent(btnSalidas, GroupLayout.PREFERRED_SIZE, 167, GroupLayout.PREFERRED_SIZE)))
+							.addComponent(btnSalidasTotales, GroupLayout.PREFERRED_SIZE, 167, GroupLayout.PREFERRED_SIZE)))
 					.addContainerGap(41, Short.MAX_VALUE))
 				.addGroup(Alignment.TRAILING, gl_contentPane.createSequentialGroup()
 					.addContainerGap(147, Short.MAX_VALUE)
@@ -118,14 +118,14 @@ public class VistaInicioR extends JFrame {
 					.addComponent(lblBienvenidoAPjmorgan)
 					.addGap(38)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(btnEntradaDeVehculo)
-						.addComponent(btnSalidaDeVehculo))
+						.addComponent(btnEntradaVehiculo)
+						.addComponent(btnSalidaVehiculo))
 					.addPreferredGap(ComponentPlacement.RELATED)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(btnVehculosActuales)
-						.addComponent(btnSalidas))
+						.addComponent(btnVehiculosActuales)
+						.addComponent(btnSalidasTotales))
 					.addPreferredGap(ComponentPlacement.RELATED)
-					.addComponent(btnFacturacin)
+					.addComponent(btnFacturacion)
 					.addPreferredGap(ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
 					.addComponent(btnSalir)
 					.addContainerGap())
