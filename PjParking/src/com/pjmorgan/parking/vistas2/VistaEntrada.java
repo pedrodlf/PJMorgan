@@ -13,11 +13,21 @@ import javax.swing.SwingConstants;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.border.EmptyBorder;
+
+import com.pjmorgan.parking.controller.AppController;
+import com.pjmorgan.parking.controller.impl.AppControllerImpl;
+import com.pjmorgan.parking.model.Entrada;
+import com.pjmorgan.parking.service.ParkingDataSource;
+import com.pjmorgan.parking.service.impl.ParkingDataSourceImpl;
+
 import javax.swing.ButtonGroup;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.Date;
 
 public class VistaEntrada extends JFrame{
+	
+	private AppController controller = new AppControllerImpl();
 	
 	private JPanel contentPane;
 	
@@ -62,6 +72,16 @@ public class VistaEntrada extends JFrame{
 		btnAnadir.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
+				String tipo = "";
+				if(rdbtnCoche.isSelected()||rdbtnMoto.isSelected()){
+				if(rdbtnCoche.isSelected())tipo = rdbtnCoche.getText();
+				else tipo = rdbtnMoto.getText();
+				}
+				
+				Entrada entrada = new Entrada(tipo, txtMarca.getText(), textMatricula.getText(), textModelo.getText(), new Date());
+				setVisible(false);
+				controller.isEntrada(entrada);
+				
 			}
 		});
 		
@@ -69,6 +89,8 @@ public class VistaEntrada extends JFrame{
 		btnAtras.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
+				setVisible(false);
+				controller.inicio();
 			}
 		});
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
