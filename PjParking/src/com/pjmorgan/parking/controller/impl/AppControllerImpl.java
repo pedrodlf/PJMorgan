@@ -5,6 +5,7 @@ import com.pjmorgan.parking.model.Entrada;
 import com.pjmorgan.parking.model.Salida;
 import com.pjmorgan.parking.vistas2.VistaEntrada;
 import com.pjmorgan.parking.vistas2.VistaInicioR;
+import com.pjmorgan.parking.vistas2.VistaSalida;
 
 public class AppControllerImpl implements AppController {
 
@@ -27,8 +28,8 @@ public class AppControllerImpl implements AppController {
 
 	@Override
 	public void nuevaSalida() {
-		// TODO Auto-generated method stub
-
+		VistaSalida salida = new VistaSalida();
+		salida.setVisible(true);
 	}
 
 	@Override
