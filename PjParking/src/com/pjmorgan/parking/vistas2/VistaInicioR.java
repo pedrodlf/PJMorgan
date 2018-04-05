@@ -16,9 +16,8 @@ import com.pjmorgan.parking.controller.AppController;
 import com.pjmorgan.parking.controller.impl.AppControllerImpl;
 
 public class VistaInicioR extends JFrame {
-	/**
-	 * 
-	 */
+
+	
 	private static final long serialVersionUID = 1L;
 	AppController controller = new AppControllerImpl();
 	private JPanel contentPane;
